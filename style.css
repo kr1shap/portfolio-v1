@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+  }
+
+
+.home-body { 
+    background-color: rgb(255, 220, 245);
+}
+
+.ind-container { 
+    padding-top:5%;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+}
+
+.img-cont { 
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+}
+
+.tit { 
+    display:flex;
+    flex-direction:column;
+}
+.pages { 
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    font-size:12px; 
+}
+
+.todo { 
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    font-size:12px; 
+}
+
+.hob { 
+    transition:0.5s;
+}
+.hob:hover { 
+    color:rgb(130, 10, 80);
+    text-shadow: 5px 5px 40px rgba(127, 54, 106, 0.397);
+}
+
+.kirb-idx { 
+    position:relative; 
+    width:100%;
+    right:20%;    
+}
+
+.kirb-abt { 
+    position:relative; 
+    width:100%;
+}
+
+.info {
+    text-align: center; /* This is already present and correctly centers the text */
+    /* Remove width property from here */
+    display: flex; /* This will allow to center text vertically */
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+}
+  
+.name { 
+    color:rgb(227, 100, 174);
+    transition:0.5s;
+}
+
+.name:hover { 
+    color:rgb(130, 10, 80);
+    text-shadow: 5px 5px 40px rgba(127, 54, 106, 0.397);
+}
+
+.hovp { 
+    text-decoration:underline #ffffff00;
+    transition:0.5s; 
+}
+.hovp:hover { 
+    text-decoration-color:rgb(227, 100, 174);
+}
+
+.hey { 
+    
+    text-decoration:underline #ffffff00;
+    transition:1s; 
+}
+
+.hey:hover { 
+    text-decoration-color:#f88ed3;
+}
+
+
+/*BUTTON*/
+
+
+
+button { 
+    font-family: "Press Start 2P", serif;
+    font-weight: 200;
+    font-style: normal;
+    border-radius:25px;
+    border-color: #fde6f5;
+    background-color: #fac3e7;
+    color:rgb(130, 10, 80);
+    padding:1vh 1.5vh;
+}
+
+.contact-btns img{
+    width: 50px; 
+    border-radius:50%;
+    margin: 10px 10px; 
+    transition: background 0.5s; 
+}
+
+.contact-btns img:hover{
+    background:#fff3fe; 
+}
+
+/*FONT */
+.pix-font {
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-clr { 
+    color: #f88ed3;
+}
+
+
+@media (max-width: 768px) {
+    .ind-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .kirb-idx { 
+        position:relative; 
+        width:100%;
+        align-items: center;
+        right:0%;
+        left:0%;
+    }
+    .kirb-abt { 
+        position:relative; 
+        width:100%;
+        align-items: center;
+        right:0%;
+        left:0%;
+    }
+    .contact-btns { 
+        flex-direction: column;
+    }
+    .hey { 
+        text-align: center; 
+        display: flex; /* This will allow to center text vertically */
+        flex-direction: column;
+        justify-content: center; 
+    }
+
+
+}
