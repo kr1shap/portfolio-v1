@@ -1,2 +1,2 @@
 # portfolio-v1
-one of my first portfolio sites
+i tried my best man
